@@ -1,22 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './Button';
+
+
+
 
 function App() {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Meal Plan and Points: 100 meals, 1000 points 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <Button text="Hangry Meter" onClick={handleClick} />
+        </div>
       </header>
     </div>
   );
