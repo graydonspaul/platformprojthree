@@ -10,7 +10,7 @@ const About = ({ data }) => {
   return (
     <section className="section">
       <div className="container text-center">
-        {image && (
+        {/* {image && (
           <div className="img-cover mb-8">
             <Image
               src={image}
@@ -20,7 +20,7 @@ const About = ({ data }) => {
               className="rounded-lg"
             />
           </div>
-        )}
+        )} */}
         {markdownify(title, "h1", "h2")}
         <Social source={social} className="social-icons-simple my-8" />
 
