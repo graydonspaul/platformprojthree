@@ -1,6 +1,6 @@
 ---
-title: "I’m John Doe, A content writer based in LDN, currently at Bookworm"
-meta_title: "About"
+title: "Meal and Point Tracker"
+meta_title: "Meal and Points"
 image: "/images/author.jpg"
 layout: "about"
 draft: false
@@ -12,6 +12,6 @@ social:
   instagram: "https://www.instagram.com"
 ---
 
-A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget.
+you have eaten too much lay off 
 
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.
+you dont have enough meals left 
