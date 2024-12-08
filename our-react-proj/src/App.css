@@ -9,12 +9,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #013366;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.map-container {
+  height: 400px; /* Set a fixed height for the map */
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
