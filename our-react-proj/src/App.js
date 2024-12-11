@@ -11,6 +11,13 @@ import pasta from './images/pasta.png';
 import sushi from './images/sushi.png';
 import choolaahBowl from './images/choolaahBowl.png';
 
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import DoughertySchedule from "./pages/DoughertySchedule";
+import DonahueSchedule from "./pages/DonahueSchedule";
+import StMarysSchedule from "./pages/StMarysSchedule";
+
+
+
 const SkeletonText = ({ width, height }) => {
   return (
     <div
@@ -24,6 +31,7 @@ const SkeletonText = ({ width, height }) => {
     />
   );
 };
+
 
 const center = { lat: 40.03769759888606, lng: -75.34253558465446 };
 
@@ -60,7 +68,6 @@ function App() {
         />
       </div>
 
-      {/* Lunch Specials Section */}
       <div className="lunch-specials">
         <h2 className="section-title">This Week's Lunch Specials</h2>
         <div className="info-section">
@@ -94,6 +101,32 @@ function App() {
           ))}
         </div>
       </div>
+
+        <h2 className="section-title">Dining Hall Schedules</h2>
+        <Router>
+      <div>
+        <nav className="flex-container">
+          <ul>
+            <li>
+              <Link to="/dougherty" className="button-link">Dougherty Hall</Link>
+            </li>
+            <li>
+              <Link to="/donahue" className="button-link">Donahue Hall</Link>
+            </li>
+            <li>
+              <Link to="/st-marys" className="button-link">St. Mary's</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/dougherty" element={<DoughertySchedule />} />
+          <Route path="/donahue" element={<DonahueSchedule />} />
+          <Route path="/st-marys" element={<StMarysSchedule />} />
+        </Routes>
+      </div>
+    </Router>
+
     </div>
   );
 }

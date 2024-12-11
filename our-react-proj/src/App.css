@@ -121,3 +121,64 @@
   text-align: center; /* Centers the description text */
   margin-top: 0; /* Ensure no additional margin at the top */
 }
+
+.button-link {
+  text-decoration: none;
+  display: block;
+  background-color: #1767fd;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
+.button-link:hover {
+  background-color: #0450a1;
+}
+
+.flex-container ul {
+  display: flex; 
+  justify-content: space-around; 
+  padding: 10px;
+  list-style-type: none;
+}
+
+table {
+  width: 98%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #ababab;
+  padding: 5px;
+  text-align: center;
+}
+
+.cell-color {
+  background-color: #09b1ed91;
+}
+
+.cell-color1 {
+  background-color: #6009ed91;
+}
+
+.cell-color2 {
+  background-color: #0fbe3891;
+}
+
+.image-size {
+  width: 400px;
+  height: auto;  
+}
+
+.font {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #013160;
+  text-align: center;
+}
