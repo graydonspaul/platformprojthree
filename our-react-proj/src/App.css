@@ -44,3 +44,80 @@
   width: 100%;
   bottom: 0;
 }
+
+.lunch-specials {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #013366;
+  text-align: center;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns all items at the top */  gap: 10px; /* Adjusted gap for better spacing */
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 200px; /* Ensures columns have a consistent width */
+}
+
+.info-image {
+  width: auto;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  cursor: pointer;
+}
+
+.info-image.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2.5); /* Reduced zoom level */
+  z-index: 1000;
+  max-width: 80%; /* Constrain size within viewport */
+  max-height: 80%;
+  object-fit: contain; /* Prevent distortion */
+}
+
+
+.info-image.expanded::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999;
+}
+
+.info-column h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-height: 40px; /* Ensure titles have consistent height */
+}
+
+.info-column p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center; /* Centers the description text */
+  margin-top: 0; /* Ensure no additional margin at the top */
+}
