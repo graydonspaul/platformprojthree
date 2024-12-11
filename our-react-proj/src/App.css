@@ -121,3 +121,10 @@
   text-align: center; /* Centers the description text */
   margin-top: 0; /* Ensure no additional margin at the top */
 }
+
+.map-title {
+  font-weight: bold;
+  color: #013366;
+  text-align: center;
+  font-size:large;
+}
