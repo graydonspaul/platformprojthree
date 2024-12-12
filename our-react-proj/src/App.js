@@ -68,6 +68,7 @@ function App() {
         />
       </div>
 
+      {/* Lunch Specials Section */}
       <div className="lunch-specials">
         <h2 className="section-title">This Week's Lunch Specials</h2>
         <div className="info-section">
@@ -126,6 +127,23 @@ function App() {
         </Routes>
       </div>
     </Router>
+    
+      <div className="map-title">
+          <h1>Campus Map</h1>
+      </div>
+      {/* Google Maps API*/}
+      <div className="map-container">
+        <GoogleMap
+          center={center}
+          zoom={15}
+          mapContainerStyle={{ width: '100%', height: '100%' }}
+          options = {{
+            streetViewControl: false,
+            fullscreenControl: false,
+          }}
+        > 
+        </GoogleMap>
+      </div>
 
     </div>
   );
