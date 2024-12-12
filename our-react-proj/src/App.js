@@ -60,14 +60,6 @@ function App() {
         </div>
       </header>
 
-      <div className="map-container">
-        <GoogleMap
-          center={center}
-          zoom={15}
-          mapContainerStyle={{ width: '100%', height: '100%' }}
-        />
-      </div>
-
       {/* Lunch Specials Section */}
       <div className="lunch-specials">
         <h2 className="section-title">This Week's Lunch Specials</h2>
